@@ -344,7 +344,7 @@ This portfolio is for demonstration purposes. All data are synthetic and do not 
 **Role:** Director of Evidence and Learning  
 **Expertise:** MERL Systems | Cost-Effectiveness | Digital Health Data  
 
-[![LinkedIn]https://www.linkedin.com/in/charles-daniel-apollo-1551b2b3/
+[![LinkedIn] (https://www.linkedin.com/in/charles-daniel-apollo-1551b2b3/
 [![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:charlesdanieldoka@gmail.com)
 
 ---
