@@ -1,332 +1,364 @@
-# Portfolio_MERL-Director-of-Evidence-and-Learning-statistician-
+# Tiko Evidence & Learning Portfolio
 
-# Tiko Evidence & Learning Portfolio  
-**Director of Evidence and Learning | MERL Systems | Cost-Effectiveness | Digital Health Data**
+**Integrated Monitoring, Evaluation, Research & Learning (MERL) System for Adolescent Sexual & Reproductive Health**
 
-## Overview
-
-This repository presents an end-to-end **Evidence, Measurement, Evaluation, and Learning (EMEL)** system designed for adolescent girls and young women (AGYW) programmes addressing **unintended pregnancy, HIV, and sexual and gender-based violence (SGBV)**.
-
-The portfolio mirrors the operational and strategic evidence needs of **Tiko’s integrated service delivery model**, demonstrating how digital data systems, rigorous analytics, and structured learning processes can be embedded into programme delivery, government collaboration, and donor accountability.
-
-The repository showcases:
-- Harmonized MEL framework aligned to Theory of Change and donor standards  
-- Digital data collection using KoboToolbox (XLSForms)  
-- Secure data pipelines using Python, SQL, and API integrations  
-- Excel-based quality assurance workflows for field and partner use  
-- Power BI dashboards for decision-making and performance management  
-- Cost-effectiveness and ROI analysis for integrated service models  
-- Learning products, research protocols, and government-style data triangulation  
-
-All datasets are **synthetically generated** and privacy-safe.
+[![Evidence-Based](https://img.shields.io/badge/approach-evidence--based-blue)](https://github.com)
+[![Digital Health](https://img.shields.io/badge/sector-digital%20health-green)](https://github.com)
+[![MERL Systems](https://img.shields.io/badge/focus-MERL%20systems-orange)](https://github.com)
 
 ---
 
-## Portfolio Architecture
+## 🎯 Overview
 
-**Data Flow:**  
-KoboToolbox → API Extraction → Data Quality & Transformation → SQL Data Model → Analytics → Dashboards → Learning Outputs
+This portfolio demonstrates an **end-to-end Evidence, Measurement, Evaluation, and Learning (EMEL) system** designed for adolescent girls and young women (AGYW) programmes addressing:
 
+- Unintended pregnancy prevention
+- HIV prevention and care
+- Sexual and gender-based violence (SGBV) response
+
+The system mirrors operational and strategic evidence needs for integrated service delivery models, showcasing how digital data systems, rigorous analytics, and structured learning processes can be embedded into programme delivery, government collaboration, and donor accountability.
+
+### Key Highlights
+
+- ✅ Harmonized MEL framework aligned to Theory of Change and donor standards
+- ✅ Digital data collection using KoboToolbox (XLSForms)
+- ✅ Secure data pipelines using Python, SQL, and API integrations
+- ✅ Excel-based quality assurance workflows for field teams
+- ✅ Power BI dashboards for decision-making and performance management
+- ✅ Cost-effectiveness and ROI analysis
+- ✅ Learning products and research protocols
+- ✅ Government-style data triangulation and DHIS2 alignment
+
+> **Note:** All datasets are synthetically generated and privacy-safe.
+
+---
+
+## 🏗️ System Architecture
+
+### Data Flow Pipeline
+
+```
+KoboToolbox Forms
+       ↓
+API Extraction (Python)
+       ↓
+Data Quality & Transformation
+       ↓
+SQL Data Model
+       ↓
+Analytics & Indicators
+       ↓
+Power BI Dashboards → Learning Outputs
+```
+
+### Service Journey Flow
+
+```
 AGYW Intake & Referral
-↓
+       ↓
 Service Verification (Clinics)
-↓
+       ↓
 Client Feedback & Quality Assessments
-↓
-Python ETL + Validation
-↓
-SQL Analytical Views
-↓
-Power BI Dashboards & Learning Briefs
-
+       ↓
+Data Integration & Analysis
+       ↓
+Evidence → Decisions → Learning
+```
 
 ---
 
-## Repository Structure (Executive Summary)
+## 📂 Repository Structure
 
-- **1_mel_framework/**  
-  Harmonized MEL plan, Theory of Change, indicator registry, and reporting calendar.
-
-- **2_data_collection_kobo/**  
-  XLSForms covering intake, referrals, service verification, feedback, clinic quality, and safeguarding.
-
-- **3_simulated_data/**  
-  Realistic synthetic datasets structured to mirror digital health and referral ecosystems.
-
-- **4_sql_data_model/**  
-  Normalized schemas, analytical views, and data quality checks.
-
-- **5_python_analytics/**  
-  API extraction, transformation, indicator computation, cost-effectiveness, and outcome analysis.
-
-- **6_excel_workflows/**  
-  Power Query–based cleaning templates and QA summaries for operational teams.
-
-- **7_powerbi_dashboards/**  
-  Executive dashboards for outcomes, partner performance, user experience, and data quality.
-
-- **8_learning_products/**  
-  Evidence briefs, research protocols, ethics notes, and learning documentation.
-
-- **9_government_collab_simulation/**  
-  DHIS2-style indicator comparisons, joint review packs, and data quality improvement plans.
+```
+tiko-evidence-portfolio/
+│
+├── 1_mel_framework/
+│   ├── theory_of_change.md
+│   ├── mel_plan.md
+│   ├── indicator_reference_sheet.xlsx
+│   └── reporting_calendar.xlsx
+│
+├── 2_data_collection_kobo/
+│   ├── agyw_intake_form.xlsx
+│   ├── referral_verification_form.xlsx
+│   ├── client_feedback_survey.xlsx
+│   ├── clinic_quality_assessment.xlsx
+│   └── safeguarding_incident_form.xlsx
+│
+├── 3_simulated_data/
+│   ├── agyw_enrollments.csv
+│   ├── service_verifications.csv
+│   ├── client_feedback.csv
+│   └── data_dictionary.md
+│
+├── 4_sql_data_model/
+│   ├── schema_design.sql
+│   ├── analytical_views.sql
+│   └── data_quality_checks.sql
+│
+├── 5_python_analytics/
+│   ├── api_extraction.py
+│   ├── data_transformation.py
+│   ├── indicator_computation.py
+│   └── cost_effectiveness_analysis.py
+│
+├── 6_excel_workflows/
+│   ├── data_cleaning_template.xlsx
+│   ├── qa_summary_dashboard.xlsx
+│   └── partner_performance_tracker.xlsx
+│
+├── 7_powerbi_dashboards/
+│   ├── executive_dashboard.pbix
+│   ├── partner_performance.pbix
+│   └── data_quality_monitoring.pbix
+│
+├── 8_learning_products/
+│   ├── evidence_briefs/
+│   ├── research_protocols/
+│   └── ethics_documentation/
+│
+└── 9_government_collaboration/
+    ├── dhis2_indicator_mapping.xlsx
+    ├── joint_review_pack.pptx
+    └── data_quality_improvement_plan.md
+```
 
 ---
 
-## Key Competencies Demonstrated
+## 💡 Core Competencies Demonstrated
 
-- Strategic MEL leadership and framework design  
-- Advanced quantitative and qualitative analysis  
-- Cost-effectiveness and ROI modelling  
-- Digital health data systems and APIs  
-- Government and DHIS2-style data alignment  
-- Ethical research design and safeguarding-aware systems  
-- Translation of evidence into decisions and learning  
+### Strategic MEL Leadership
+- Theory of Change development and operationalization
+- Harmonized indicator frameworks aligned to donor and government standards
+- Integration of evidence into programme strategy and adaptation
+
+### Advanced Analytics & Research
+- Quantitative and qualitative analysis
+- Cost-effectiveness and ROI modeling
+- Outcome evaluation and attribution analysis
+- Ethical research design with safeguarding protocols
+
+### Digital Health Systems
+- KoboToolbox form design and deployment
+- API-based data extraction and automation
+- SQL database design and optimization
+- Power BI dashboard development
+
+### Government & Partner Collaboration
+- DHIS2 system alignment and indicator mapping
+- Joint data review processes
+- Data quality improvement frameworks
+- Evidence translation for policy influence
 
 ---
 
-## Ethics, Safeguarding, and Data Protection
+## 🔍 Theory of Change
 
-- All data are synthetic and de-identified  
-- Forms include consent logic, safeguarding triggers, and minimal data capture  
-- Design aligns with principles of **Do No Harm**, ethical research, and client confidentiality  
-- Repository includes mock IRB and ethics documentation for demonstration purposes  
+### The Triple Threat
+
+AGYW in Sub-Saharan Africa face intersecting challenges:
+- Structural barriers to youth-friendly SRH services
+- Fragmented service delivery and referral systems
+- Stigma, cost, and limited trust in health systems
+- Weak feedback loops for quality improvement
+
+### Our Approach
+
+**If** AGYW receive trusted referrals, verified services, and positive care experiences,  
+**And if** partners are incentivized and supported through evidence,  
+**Then** health outcomes improve and systems become more responsive and resilient.
+
+### Impact Goals
+
+- Reduced unintended pregnancy
+- Reduced HIV incidence
+- Reduced exposure to and impact of SGBV
+- Improved health autonomy and resilience
 
 ---
 
-## Intended Audience
+## 📊 Sample Indicators
+
+### Outcome Indicators
+
+**OUT_01: Verified FP Service Uptake Rate**
+- **Definition:** Percentage of enrolled AGYW who completed and verified a family planning service
+- **Calculation:** (AGYW with verified FP service ÷ AGYW enrolled and referred for FP) × 100
+- **Disaggregation:** Age group, district, clinic
+- **Use:** Programme performance, donor reporting
+
+### Experience Indicators
+
+**EXP_02: Stigma-Free Care Score**
+- **Definition:** Average score measuring perceived stigma-free treatment during service delivery
+- **Scale:** 1–5 (higher is better)
+- **Source:** Client Feedback Survey
+- **Use:** Quality improvement, partner support
+
+### Cost-Effectiveness Indicators
+
+**CEA_01: Cost per Verified Integrated Service**
+- **Definition:** Average programme cost per AGYW receiving at least one verified service
+- **Calculation:** Total programme cost ÷ Number of AGYW with ≥1 verified service
+- **Use:** ROI analysis, value-for-money assessments
+
+---
+
+## 🛡️ Ethics, Safeguarding & Data Protection
+
+This portfolio adheres to the highest standards of research ethics and data protection:
+
+- ✅ All data are **synthetically generated** and de-identified
+- ✅ Forms include consent logic and safeguarding triggers
+- ✅ Minimal data capture for sensitive topics (SGBV)
+- ✅ Aggregation rules protect individual privacy
+- ✅ Design aligns with **Do No Harm** principles
+- ✅ Mock IRB and ethics documentation included for demonstration
+
+### Safeguarding Features
+- Real-time incident flagging
+- Secure referral pathways
+- Role-based data access controls
+- Confidentiality protocols embedded in workflows
+
+---
+
+## 🎓 Learning & Adaptation
+
+### Learning Cycle
+
+```
+Programme Delivery
+       ↓
+Data Collection
+       ↓
+Analysis & Insights
+       ↓
+Learning Briefs
+       ↓
+Adaptation & Decision-Making
+       ↓
+(Return to Programme Delivery)
+```
+
+### Learning Products
+
+- Monthly programme reviews
+- Quarterly evidence briefs
+- Annual evidence synthesis
+- Joint data review meetings with Ministries of Health
+- Research papers and case studies
+
+---
+
+## 👥 Intended Audience
 
 This portfolio is designed for:
-- Senior leadership and boards  
-- Ministries of Health and national data teams  
-- Donors and technical partners  
-- MEL, research, and digital health specialists  
+
+- **Senior Leadership & Boards:** Strategic decision-making and governance
+- **Ministries of Health:** Government collaboration and system strengthening
+- **Donors & Technical Partners:** Accountability and evidence of impact
+- **MEL Specialists:** Methodological approaches and best practices
+- **Digital Health Practitioners:** Technical implementation and innovation
 
 ---
 
-*This repository demonstrates not just analytical capability, but the leadership, systems thinking, and evidence culture required to operate at continental scale.*
-2️⃣ theory_of_change.md
-# Theory of Change  
-**Integrated Digital Health Ecosystem for Adolescent Girls and Young Women**
+## 🚀 Getting Started
 
-## Impact (Long-Term)
+### Prerequisites
 
-Improved health, autonomy, and resilience of adolescent girls and young women through:
-- Reduced unintended pregnancy  
-- Reduced HIV incidence  
-- Reduced exposure to and impact of sexual and gender-based violence  
+- Python 3.8+
+- SQL database (PostgreSQL/MySQL)
+- Power BI Desktop
+- Excel with Power Query
+- KoboToolbox account (for form deployment)
 
----
+### Quick Start
 
-## Problem Statement
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/tiko-evidence-portfolio.git
+   cd tiko-evidence-portfolio
+   ```
 
-AGYW in Sub-Saharan Africa face a **Triple Threat** driven by:
-- Structural barriers to accessing youth-friendly SRH services  
-- Fragmented service delivery and referral systems  
-- Stigma, cost, and lack of trust in health systems  
-- Weak feedback loops and limited use of evidence for improvement  
+2. **Install Python dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+3. **Set up the database**
+   ```bash
+   psql -U your_user -d your_database -f 4_sql_data_model/schema_design.sql
+   ```
 
-## Core Assumptions
+4. **Load sample data**
+   ```bash
+   python 5_python_analytics/data_transformation.py
+   ```
 
-- Integrated service delivery increases uptake and continuity of care  
-- Incentives and peer accompaniment reduce stigma and access barriers  
-- Real-time data and feedback improve service quality and accountability  
-- Evidence embedded into decision-making strengthens system performance  
-
----
-
-## Inputs
-
-- Trained peer mobilisers and community-based organizations  
-- Digital referral and verification platform  
-- Network of public and private health facilities  
-- Incentive mechanisms (e.g., Tiko Miles)  
-- MEL systems, analytics, and learning capacity  
+5. **Open Power BI dashboards**
+   - Navigate to `7_powerbi_dashboards/`
+   - Open `.pbix` files in Power BI Desktop
 
 ---
 
-## Activities
+## 📈 Use Cases
 
-1. AGYW enrollment and risk-informed intake  
-2. Digital referrals for FP, HIV, and SGBV services  
-3. Service delivery and verification at clinics  
-4. Incentive redemption and partner compensation  
-5. Client feedback and experience monitoring  
-6. Data quality assurance and analytics  
-7. Learning, adaptation, and government engagement  
+### For Programme Managers
+- Real-time performance monitoring
+- Partner accountability tracking
+- Service quality improvement
 
----
+### For MEL Teams
+- Indicator computation automation
+- Data quality assurance workflows
+- Learning brief generation
 
-## Outputs
+### For Researchers
+- Outcome evaluation frameworks
+- Cost-effectiveness analysis
+- Mixed-methods integration
 
-- Verified service uptake records  
-- Client feedback datasets  
-- Clinic quality assessments  
-- Partner performance metrics  
-- Cost and efficiency metrics  
-
----
-
-## Outcomes (Medium-Term)
-
-- Increased uptake of FP and HIV services  
-- Improved identification and referral for SGBV cases  
-- Improved client experience and reduced stigma  
-- Improved partner performance and accountability  
-- Strengthened use of data in programme management  
+### For Government Partners
+- DHIS2 data alignment
+- Joint review preparation
+- System strengthening insights
 
 ---
 
-## Pathway to Impact
+## 🤝 Contributing
 
-If AGYW receive **trusted referrals**, **verified services**, and **positive care experiences**,  
-and if partners are **incentivized and supported through evidence**,  
-then health outcomes improve and systems become more responsive and resilient.
-3️⃣ mel_plan.md (with full indicator logic)
-# Monitoring, Evaluation, and Learning (MEL) Plan
-
-## Purpose
-
-This MEL Plan operationalizes the Theory of Change by defining:
-- What is measured  
-- How it is measured  
-- How evidence is used for decisions, learning, and accountability  
-
-The plan aligns with donor requirements, government systems, and ethical standards.
+This is a demonstration portfolio showcasing professional MERL capabilities. While not currently accepting external contributions, feedback and questions are welcome.
 
 ---
 
-## MEL Objectives
+## 📄 License
 
-1. Measure uptake and continuity of integrated FP, HIV, and SGBV services  
-2. Assess quality, experience, and safety of service delivery  
-3. Monitor partner performance and efficiency  
-4. Generate evidence on cost-effectiveness and value for money  
-5. Embed learning into programme adaptation and scale  
+This portfolio is for demonstration purposes. All data are synthetic and do not represent real individuals or organizations.
 
 ---
 
-## Results Framework
+## 📬 Contact
 
-| Level | Focus |
-|------|------|
-| Impact | Health and resilience outcomes |
-| Outcomes | Service uptake, experience, quality |
-| Outputs | Referrals, verifications, feedback |
-| Processes | Data quality, timeliness, coverage |
+**Portfolio Owner:** [Your Name]  
+**Role:** Director of Evidence and Learning  
+**Expertise:** MERL Systems | Cost-Effectiveness | Digital Health Data  
 
----
-
-## Indicator Types
-
-- Output indicators  
-- Outcome indicators  
-- Experience & feedback indicators  
-- Cost-effectiveness indicators  
-- Data quality indicators  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:your.email@example.com)
 
 ---
 
-## Data Sources
+## 🌟 Acknowledgments
 
-- KoboToolbox digital forms  
-- SQL analytical database  
-- Client feedback surveys  
-- Clinic quality assessments  
-- Cost and financial tracking datasets  
+This portfolio demonstrates not just analytical capability, but the **leadership, systems thinking, and evidence culture** required to operate at continental scale.
 
----
-
-## Disaggregation Standards
-
-All individual-level indicators are disaggregated by:
-- Age group (10–14, 15–19, 20–24)  
-- Geography (country, district)  
-- Service type (FP, HIV, SGBV)  
-- Partner type (CBO, clinic)  
+It reflects the integration of:
+- Strategic vision and operational rigor
+- Technical excellence and ethical practice
+- Evidence generation and learning culture
+- Digital innovation and human-centered design
 
 ---
 
-## Learning & Use
-
-- Monthly programme reviews  
-- Quarterly learning briefs  
-- Annual evidence synthesis  
-- Joint data review meetings with Ministries of Health  
-
----
-
-## Ethics & Data Protection
-
-- Informed consent embedded in intake forms  
-- Minimal data capture for sensitive topics  
-- Aggregation rules for SGBV reporting  
-- Secure access and role-based data use  
-4️⃣ Indicator Reference Sheet (Layout + Sample Entries)
-Use this structure in Excel or CSV (indicator_reference_sheet.xlsx).
-
-Column Layout (Authoritative Registry)
-Column Name	Description
-Indicator_ID	Unique code (e.g. OUT_01)
-Indicator_Name	Short descriptive title
-Indicator_Type	Output / Outcome / Experience / Cost
-Description	Full definition
-Numerator	What is counted
-Denominator	Reference population
-Calculation_Method	Formula
-Unit	%, count, ratio
-Disaggregation	Age, geography, service
-Data_Source	Kobo form / SQL view
-Collection_Frequency	Monthly / Quarterly
-Responsible_Team	MEL / Research
-Data_Quality_Checks	Key validations
-Use_for_Decision_Making	How indicator is used
-Reporting_Level	Internal / Donor / Government
-Ethical_Notes	Sensitivity considerations
-Sample Populated Indicators
-Indicator_ID	Indicator_Name	Type
-OUT_01	Verified FP Service Uptake Rate	Outcome
-Definition:
-Percentage of enrolled AGYW who completed and verified a family planning service.
-
-Numerator: Number of AGYW with verified FP service
-
-Denominator: Number of AGYW enrolled and referred for FP
-
-Calculation: (Numerator ÷ Denominator) × 100
-
-Disaggregation: Age group, district, clinic
-
-Source: Referral & Service Verification Form
-
-Frequency: Monthly
-
-Use: Programme performance, donor reporting
-
-Indicator_ID	Indicator_Name	Type
-EXP_02	Stigma-Free Care Score	Experience
-Definition:
-Average score measuring perceived stigma-free treatment during service delivery.
-
-Numerator: Sum of stigma-free scores
-
-Denominator: Number of feedback respondents
-
-Unit: Mean score (1–5)
-
-Source: Client Feedback Survey
-
-Use: Quality improvement, partner support
-
-Indicator_ID	Indicator_Name	Type
-CEA_01	Cost per Verified Integrated Service	Cost
-Definition:
-Average programme cost per AGYW receiving at least one verified FP, HIV, or SGBV service.
-
-Calculation: Total programme cost ÷ number of AGYW with ≥1 verified service
-
-Source: Financial tracking + service verification data
-
-Use: Cost-effectiveness analysis, ROI discussions
+*Building evidence systems that transform health outcomes for adolescent girls and young women across Sub-Saharan Africa.*
